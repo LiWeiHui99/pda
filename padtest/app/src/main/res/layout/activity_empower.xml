@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/BottomColorBlue">
+    <TextView
+        android:text="机动车外检系统"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/BottomColorBlue"
+        android:gravity="center"
+        android:background="@drawable/background_translucent"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:src="@mipmap/camera"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="授权中心"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/background_translucent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="授权码"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/Em_code"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:background="@drawable/background_translucent"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+         <Button
+             android:id="@+id/Em_scan"
+             android:layout_marginLeft="10dp"
+             android:background="@mipmap/scan"
+             android:layout_width="30dp"
+             android:layout_height="30dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <Button
+                android:id="@+id/Em_cancel"
+                android:text="取消"
+                android:gravity="center"
+                android:textColor="#000"
+                android:background="@drawable/background_btn"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="100dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp" />
+            <Button
+                android:id="@+id/Em_save"
+                android:text="保存"
+                android:gravity="center"
+                android:textColor="#000"
+                android:background="@drawable/background_btn"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100dp"
+                android:layout_width="60dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:text="系统版本 8.1.0"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="项目版本: 1.0"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

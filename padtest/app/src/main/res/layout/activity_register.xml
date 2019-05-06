@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BottomColorBlue">
+    <ImageView
+        android:id="@+id/Rg_EditHead"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/register"
+        android:layout_centerHorizontal="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <EditText
+        android:id="@+id/Rg_CheckStationId"
+        android:hint="检测站编号"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Rg_EditHead"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_et"/>
+    <EditText
+        android:id="@+id/Rg_WebIp"
+        android:hint="中心web服务IP"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Rg_CheckStationId"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_et"/>
+    <EditText
+        android:id="@+id/Rg_WebPort"
+        android:hint="中心web服务端口"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_below="@+id/Rg_WebIp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/background_et"/>
+    <Button
+        android:id="@+id/Rg_Register"
+        android:text="注 册"
+        android:layout_below="@+id/Rg_WebPort"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_btn"/>
+    <TextView
+        android:text="系统注册"
+        android:layout_below="@+id/Rg_Register"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
